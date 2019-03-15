@@ -3,10 +3,10 @@ import './App.css';
 import Main from './Main';
 
 class App extends Component {
-  constructor() {
-    super()
+  // constructor() {
+  //   super()
 
-  }
+  // }
   render() {
     return (
       <div className="App">

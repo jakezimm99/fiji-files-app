@@ -5,8 +5,7 @@ const SideBar = () => {
         <header className = "SideBar"
         style = {styles.SideBar}>
             <div className="Classes">
-            <h2>Courses</h2>
-
+            <h2>Majors</h2>
             </div>
 
         </header>
@@ -17,7 +16,12 @@ const SideBar = () => {
 const styles = {
     SideBar: {
         alignItems: 'left',
-        backgroundColor: 'purple',
+        flexDirection: 'column',
+        display: 'flex',
+        padding: '1rem 0',
+        width: '12rem',
+        color: 'rgba{255, 255, 140, 0.8}'
+
     }
 }
 

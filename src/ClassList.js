@@ -1,10 +1,11 @@
 import React from 'react';
 
-const Files = () => {
+const ClassList = () => {
     return(
         <div className = 'Files'
         style = {styles.Files}>
-            <h2>Here is where tests will go
+            <h2>
+            Classes
                 
             </h2>
             
@@ -13,9 +14,11 @@ const Files = () => {
 }
 const styles = {
     Files: {
-        backgroundColor: 'black',
-        alignItems: 'right'
+        backgroundColor: 'grey',
+        flex: 1,
+        paddingBottom: '1rem',
+        overflowY: 'scroll',
     }
 }
 
-export default Files
+export default ClassList

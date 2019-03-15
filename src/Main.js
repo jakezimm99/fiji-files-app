@@ -1,26 +1,20 @@
 import React from 'react'
 import SideBar from './SideBar';
-import Files from './Files';
+import ClassList from './ClassList';
 
 const Main = () => {
     return(
-        <div>
-            <SideBar className = 'SideBar'
-            styles = {style.SideBar}></SideBar>
-            <Files className = 'Files'
-            styles = {style.Files}></Files>
+        <div style = {styles}>
+            <SideBar className = 'SideBar'></SideBar>
+            <ClassList className = 'ClassList'></ClassList>
         </div>
     )
 }
 
-const style = {
-    SideBar: {
-        display: 'flex'
-    },
-
-    Files: {
-        display: 'flex'
-    }
-}
+const styles = {
+    display: 'flex',
+    alignItems: 'stretch',
+    height: '100vh',
+  }
 
 export default Main
