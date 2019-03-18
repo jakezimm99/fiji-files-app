@@ -5,7 +5,8 @@ const SideBar = () => {
         <header className = "SideBar"
         style = {styles.SideBar}>
             <div className="Classes">
-            <h2 className = "MajorHeader">Majors</h2>
+            <h2 className = "MajorHeader"
+            style= {styles.MajorHeader}>Majors</h2>
             </div>
 
         </header>
@@ -19,12 +20,12 @@ const styles = {
         flexDirection: 'column',
         display: 'flex',
         padding: '1rem 0',
-        width: '12rem',
-        backgroundColor: 'purple'
+        width: '15rem',
+        backgroundColor: 'rgba(30,30,30,0.95)'
 
     },
     MajorHeader: {
-        fontColor: 'rgba(200,200,200, 0.9)'
+        color: 'rgba(255,255,255,0.75)'
     }
 }
 

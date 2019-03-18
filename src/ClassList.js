@@ -1,11 +1,14 @@
 import React from 'react';
 import Class from './Class'
+import Header from './Header'
 
 const ClassList = () => {
     return(
         <div className = 'Files'
         style = {styles.Files}>
-            <h1 >This is the beginning of classes</h1>
+            <Header className = 'Header'></Header>
+            <h1 className = "Major"
+            style = {styles.Major}>MA Mathematics</h1>
            <p><ul className = 'List'
            style = {styles.List}>
                <li><Class></Class></li>
@@ -20,7 +23,6 @@ const styles = {
         display: 'flex',
         flexDirection: 'column',
         backgroundColor: 'rgba(15,15,15,0.75)',
-        font: 'purple',
         flex: 1,
         paddingBottom: '1rem',
         overflowY: 'scroll',
@@ -29,6 +31,10 @@ const styles = {
     },
     List: {
         listStyle: 'none',
+    },
+
+    Major: {
+        color: 'whitesmoke'
     }
 }
 

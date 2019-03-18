@@ -13,7 +13,7 @@ class Class extends Component {
 
 const styles = {
     Class: {
-        position: 'relative',
+        display: 'flex',
         color: 'whitesmoke',
     }
 }
