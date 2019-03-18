@@ -15,12 +15,12 @@ const SideBar = () => {
 
 const styles = {
     SideBar: {
-        alignItems: 'left',
+        alignItems: 'flex-start',
         flexDirection: 'column',
         display: 'flex',
         padding: '1rem 0',
         width: '12rem',
-        color: 'rgba{255, 255, 140, 0.8}'
+        backgroundColor: 'rgba{255, 255, 255, 0.8}'
 
     }
 }
