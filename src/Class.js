@@ -14,7 +14,7 @@ class Class extends Component {
 const styles = {
     Class: {
         position: 'relative',
-        color: 'black',
+        color: 'whitesmoke',
     }
 }
 

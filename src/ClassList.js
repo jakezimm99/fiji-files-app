@@ -5,7 +5,7 @@ const ClassList = () => {
     return(
         <div className = 'Files'
         style = {styles.Files}>
-            <h1>This is the beginning of classes</h1>
+            <h1 >This is the beginning of classes</h1>
            <p><ul className = 'List'
            style = {styles.List}>
                <li><Class></Class></li>
@@ -19,7 +19,8 @@ const styles = {
     Files: {
         display: 'flex',
         flexDirection: 'column',
-        backgroundColor: 'grey',
+        backgroundColor: 'rgba(15,15,15,0.75)',
+        font: 'purple',
         flex: 1,
         paddingBottom: '1rem',
         overflowY: 'scroll',
