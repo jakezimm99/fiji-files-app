@@ -5,7 +5,7 @@ class Header extends Component {
         return (
             <div className = 'Header'
             style = {styles.Header}>
-                <h2 style = {styles.h2}>Welcome Back "Insert user's name"
+                <h2 style = {styles.h2}>Welcome to Fiji Files, "Insert user's name"
                 </h2>
             </div>
         )

@@ -1,4 +1,5 @@
 import React from 'react'
+import MajorList from './MajorList';
 
 const SideBar = () => {
     return (
@@ -7,6 +8,7 @@ const SideBar = () => {
             <div className="Classes">
             <h2 className = "MajorHeader"
             style= {styles.MajorHeader}>Majors</h2>
+            <MajorList style = {styles.MajorList}></MajorList>
             </div>
 
         </header>
@@ -26,6 +28,11 @@ const styles = {
     },
     MajorHeader: {
         color: 'rgba(255,255,255,0.75)'
+    },
+    MajorList: {
+        display: 'flex',
+        flexDirection: 'column',
+        button: ''
     }
 }
 
