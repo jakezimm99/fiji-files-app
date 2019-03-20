@@ -1,17 +1,17 @@
 import React, { Component } from "react";
 
-class MajorList extends Component {
-  render() {
-    return (
-      <div>
-        <button className="button" style={styles.button}>
-          <i className="fas fa-plus-circle" />
-          Add a Major
-        </button>
-      </div>
-    );
-  }
-}
+import Major from "./Major";
+
+const MajorList = ({ showAddMajor, setCurrentMajor, majors }) => {
+  return (
+    <div>
+      <button className="button" style={styles.button} onClick={showAddMajor}>
+        <i className="fas fa-plus-circle" />
+        Add a Major
+      </button>
+    </div>
+  );
+};
 
 const styles = {
   button: {

@@ -10,7 +10,7 @@ class Main extends Component {
       description: ""
     },
     majors: {},
-    showAddMajor: true
+    showAddMajor: false
   };
 
   addMajor = major => {
@@ -41,7 +41,12 @@ class Main extends Component {
     }
     return (
       <div style={styles}>
-        <SideBar className="SideBar" />
+        <SideBar
+          className="SideBar"
+          showAddMajor={this.showAddMajor}
+          setcurrentMajor={this.setcurrentMajor}
+          majors={this.majors}
+        />
         <ClassList className="ClassList" />
       </div>
     );
