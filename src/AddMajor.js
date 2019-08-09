@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import * as firebase from 'firebase';
 
 class AddMajor extends Component {
   state = {
@@ -16,8 +17,12 @@ class AddMajor extends Component {
 
   handleSubmit = ev => {
     ev.preventDefault();
-    this.props.addMajor(this.state.major);
-    this.props.hideRoomForm();
+
+    var firebaseRef = firebase.database().ref().child("Department");
+    firebaseRef.child("Department Name").child("Abbreviation").set("The Abbreviation");
+
+    //this.props.addMajor(this.state.major);
+    //this.props.hideRoomForm();
   };
   render() {
     return (
