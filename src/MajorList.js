@@ -1,11 +1,8 @@
 import React from "react";
 
-<<<<<<< HEAD
-=======
+
 //import Major from "./Major";
 import * as firebase from 'firebase';
-
->>>>>>> 303651254bf3f6a7e2b0fcae875862407256300f
 
 const MajorList = ({ showAddMajor, setCurrentMajor, majors }) => {
   return (

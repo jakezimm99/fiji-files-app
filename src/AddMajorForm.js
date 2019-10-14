@@ -17,17 +17,14 @@ class AddMajorForm extends Component {
 
   handleSubmit = ev => {
     ev.preventDefault();
-<<<<<<< HEAD:src/AddMajorForm.js
     this.props.AddMajor(this.state.major);
     this.props.hideRoomForm();
-=======
 
     var firebaseRef = firebase.database().ref().child("Department");
     firebaseRef.child("Department Name").child("Abbreviation").set("The Abbreviation");
 
     //this.props.addMajor(this.state.major);
     //this.props.hideRoomForm();
->>>>>>> 303651254bf3f6a7e2b0fcae875862407256300f:src/AddMajor.js
   };
   render() {
     return (
