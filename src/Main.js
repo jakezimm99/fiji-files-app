@@ -1,17 +1,17 @@
 import React, { Component } from "react";
 import SideBar from "./SideBar";
 import ClassList from "./ClassList";
-import AddMajor from "./AddMajor";
+import AddMajorForm from "./AddMajorForm";
 
 class Main extends Component {
   state = {
     major: {
-      name: "",
-      description: ""
+      name: "Mathematics",
+      Abbreviation: "MA"
     },
     majors: {},
     showAddMajor: false
-  };
+  }
 
   addMajor = major => {
     const majors = { ...this.state.majors };
@@ -36,7 +36,7 @@ class Main extends Component {
   render() {
     if (this.state.showAddMajor) {
       return (
-        <AddMajor addMajor={this.AddMajor} hideAddMajor={this.hideAddMajor} />
+        <AddMajorForm AddMajor={this.AddMajor} hideAddMajor={this.hideAddMajor} />
       );
     }
     return (

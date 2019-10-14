@@ -1,6 +1,5 @@
-import React, { Component } from "react";
+import React from "react";
 
-import Major from "./Major";
 
 const MajorList = ({ showAddMajor, setCurrentMajor, majors }) => {
   return (

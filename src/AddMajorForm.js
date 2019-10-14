@@ -1,10 +1,10 @@
-import React, { Component } from "react";
+import React, { Component } from "react"
 
-class AddMajor extends Component {
+class AddMajorForm extends Component {
   state = {
     major: {
       name: "",
-      classes: {}
+      Abbreviation: {}
     }
   };
 
@@ -16,12 +16,14 @@ class AddMajor extends Component {
 
   handleSubmit = ev => {
     ev.preventDefault();
-    this.props.addMajor(this.state.major);
+    this.props.AddMajor(this.state.major);
     this.props.hideRoomForm();
   };
   render() {
     return (
       <div style={styles.AddMajor}>
+      <main className = {styles.main}
+      style = {styles.main}>
         <h2 className={styles.title}>Add a Major Here</h2>
         <form
           className={styles.form}
@@ -53,15 +55,16 @@ class AddMajor extends Component {
             />
           </p>
           <div className={styles.buttonContainer}>
+          style = {styles.buttonContainer}>
             <button
               type="button"
               className={styles.cancel}
-              style={styles.button}
+              style={styles.cancel}
+              
               onClick={this.props.hideRoomForm}
             >
               Cancel
             </button>
-
             <button
               type="submit"
               className={styles.button}
@@ -71,7 +74,9 @@ class AddMajor extends Component {
             </button>
           </div>
         </form>
+        </main>
       </div>
+      
     );
   }
 }
@@ -162,4 +167,4 @@ const styles = {
   }
 };
 
-export default AddMajor;
+export default AddMajorForm;
